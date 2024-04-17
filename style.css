@@ -57,3 +57,7 @@ nav:last-of-type a:last-of-type {
 footer a+a {
     background-color: brown;
 }
+
+.blog-post p:first-of-type a{
+    background-color: black;
+}

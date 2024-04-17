@@ -15,3 +15,11 @@ for (const STRETCHEDLINK of STRETCHEDLINKS) {
 }
 
 // EXTRA Crea con JavaScript la funzionalità per creare un alert col nome dell'autore ogni volta che il cursore passa sopra l'autore del post
+const AUTHORS = document.querySelectorAll(".blog-post p:first-of-type a");
+for (const AUTHOR of AUTHORS) {
+    AUTHOR.addEventListener("mouseover", () => { advise(AUTHOR.textContent) });
+}
+function advise(author) {
+
+    alert(`L'autore è ${author}`);
+}
